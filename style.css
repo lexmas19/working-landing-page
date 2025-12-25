@@ -11,6 +11,13 @@ main {
   div.dark_purple {
     background-image: url(./images/background_img.png);
     height: 730px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
 
     .heading {
       display: flex;
@@ -18,32 +25,92 @@ main {
       padding: 0 165px;
       height: 146px;
       align-items: center;
+      width: 100%;
       h1 {
         color: var(--font-color);
       }
       a {
         color: var(--font-color);
         text-decoration: underline var(--green) 3px;
+        text-underline-offset: 10px;
       }
     }
     div.learn_more {
+      width: 600px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       h2 {
         color: white;
         font-size: 80px;
         font-weight: 600;
         width: 600px;
+        text-align: center;
       }
       a {
         background-color: var(--green);
         color: var(--dark_purple);
         text-decoration: none;
         padding: 15px 31.5px 16px 32.5px;
+        text-align: center;
       }
+    }
+
+    .phone {
+      position: absolute;
+      top: 454px;
+      left: 361px;
     }
   }
 
   div.light_purple {
     background-image: url(./images/pink_background.png);
-    height: 730px;
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 960px;
+    position: absolute;
+    z-index: -2;
+    top: 504px;
+    display: flex;
+    align-items: end;
+    padding-bottom: 171px;
+    justify-content: center;
+
+    .texts {
+      display: flex;
+      gap: 26px;
+
+      .article {
+        width: 354px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .circle {
+          width: 55px;
+          height: 56px;
+          border: 1px solid var(--dark_purple);
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        h3 {
+          font-weight: 600;
+          font-size: 32px;
+          color: var(--dark_purple);
+          margin: 56px 0 28px 0;
+        }
+
+        p {
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 32px;
+        }
+      }
+    }
   }
 }
