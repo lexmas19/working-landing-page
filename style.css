@@ -7,6 +7,11 @@
   font-family: var(--font);
 }
 
+section.first {
+  position: relative;
+  height: 1464px;
+}
+
 main {
   div.dark_purple {
     background-image: url(./images/background_img.png);
@@ -111,6 +116,26 @@ main {
           line-height: 32px;
         }
       }
+    }
+  }
+
+  section.second {
+    div.parent {
+      width: fit-content;
+      margin-top: 110px;
+      display: flex;
+      position: relative;
+    }
+
+    article.first_text {
+      width: 730px;
+      height: 413px;
+      background-color: var(--dark_purple);
+      position: absolute;
+      top: 173px;
+      left: 382px;
+      padding: 64px;
+      
     }
   }
 }
