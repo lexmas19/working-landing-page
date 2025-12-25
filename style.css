@@ -17,12 +17,27 @@ main {
       justify-content: space-between;
       padding: 0 165px;
       height: 146px;
+      align-items: center;
       h1 {
         color: var(--font-color);
       }
       a {
         color: var(--font-color);
-        text-decoration: underline overline var(--green) 3px;
+        text-decoration: underline var(--green) 3px;
+      }
+    }
+    div.learn_more {
+      h2 {
+        color: white;
+        font-size: 80px;
+        font-weight: 600;
+        width: 600px;
+      }
+      a {
+        background-color: var(--green);
+        color: var(--dark_purple);
+        text-decoration: none;
+        padding: 15px 31.5px 16px 32.5px;
       }
     }
   }
